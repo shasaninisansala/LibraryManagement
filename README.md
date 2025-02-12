@@ -1,2 +1,2 @@
-# libraryManagement
-Library Management System(HTML/CSS/JS)
+# HospitalManagement
+Hospital Management System(HTML/CSS/JS)
