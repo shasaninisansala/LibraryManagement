@@ -1,0 +1,80 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+/* Container for Content */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e2e2e2;
+}
+
+/* Main Message Style */
+.message {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Success Message Styling */
+.success {
+    color: #28a745;
+    font-weight: 600;
+}
+
+/* Error Message Styling */
+.error {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Link (Button-like) Styling */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Hover Effect for Link */
+a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Additional Spacing for Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .message {
+        font-size: 1.15em;
+    }
+
+    a {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
+

@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Book Container */
+.book-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    vertical-align: middle;
+}
+
+td a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+td a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Book Image Styling */
+.book-image {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Handling "No Image" Text */
+td span {
+    color: #999;
+    font-style: italic;
+}
+
+/* Hover Effect on Rows */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Pagination or other actions */
+.actions {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.actions a {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.actions a:hover {
+    background-color: #218838;
+}

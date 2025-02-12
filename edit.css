@@ -1,0 +1,107 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Book Container Styles */
+.book-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px 20px;
+    background: rgba(255, 255, 255, 0.95); /* Slight transparency for background image */
+    background-image: url('images/book-bg.jpg'); /* Ensure correct image path */
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #003060;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #003060;
+    box-shadow: 0 0 5px rgba(0, 48, 96, 0.4);
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background: #003060;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #002040;
+    transform: translateY(-2px);
+}
+
+.book-container a {
+    display: block;
+    margin-top: 15px;
+    color: #004080;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.book-container a:hover {
+    text-decoration: underline;
+    color: #002060;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 14px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}

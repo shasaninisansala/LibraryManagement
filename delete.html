@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Book</title>
+    <link rel="stylesheet" href="delete.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Delete Book</h2>
+
+        <!-- Display the message -->
+        <?php if (!empty($message)) : ?>
+            <div class="message <?php echo (strpos($message, 'Error') !== false) ? 'error' : 'success'; ?>">
+                <?php echo htmlspecialchars($message); ?>
+            </div>
+        <?php endif; ?>
+
+        <form action="deletebook.php" method="POST">
+            <label for="isbn">Enter ISBN:</label>
+            <input type="text" id="isbn" name="isbn" required>
+            <button type="submit">Delete Book</button>
+        </form>
+    </div>
+</body>
+</html>

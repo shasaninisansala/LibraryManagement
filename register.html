@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Login</title>
+        <link rel="stylesheet" type="text/css" href="register.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            function Dovalidate() {
+                let inputFName = document.Register.first.value;
+                let inputLName = document.Register.last.value;
+                let inputName = document.Register.username.value;
+                let inputContact = document.Register.contact.value;
+                let inputEmail = document.Register.email.value;
+
+                if (inputFName == "") {
+                    alert("Please fill first name!");
+                    return false;
+                }
+                if (inputLName == "") {
+                    alert("Please fill last name!");
+                    return false;
+                }
+                if (inputName == "") {
+                    alert("Please enter a name!");
+                    return false;
+                }
+                if (inputContact == "") {
+                    alert("Please enter a Contact!");
+                    return false;
+                }
+                if (isNaN(inputContact)) {
+                    alert("Please enter a correct number");
+                    return false;
+                }
+                if (inputEmail == "") {
+                    alert("Please enter an Email!");
+                    return false;
+                }
+
+                var atpos = inputEmail.indexOf("@");
+                var dotpos = inputEmail.lastIndexOf(".");
+
+                if (atpos < 1 || (dotpos - atpos < 2)) {
+                    alert("Please enter a correct email ID");
+                    document.Register.email.focus();
+                    return false;
+                }
+
+                var password = document.Register.password.value;
+                var passwordreg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/;
+
+                if (!passwordreg.test(password)) {
+                    alert("Password must contain at least 8 characters, including at least one digit, one uppercase letter, one lowercase letter, and one special character");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/1.jpg" width="120" height="120">
+            </div>
+        </header>
+
+        <div class="box1">
+            <form name="Register" onsubmit="return Dovalidate()" action="register.php" method="POST">
+                <div class="login">
+                    <h2>Register Student</h2>
+                    <input type="text" name="first" placeholder="First Name" required=""><br><br>
+                    <input type="text" name="last" placeholder="Last Name" required=""><br><br> 
+                    <input type="text" name="username" placeholder="Username" required=""><br><br>
+                    <input type="text" name="email" placeholder="E mail" required=""><br><br>
+                    <input type="text" name="contact" placeholder="Contact No" required=""><br><br>
+                    <input type="password" name="password" placeholder="Password" required=""><br><br>
+                </div>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <script>
+            // Check if the page has been redirected with the success parameter
+            if (window.location.search.indexOf("success=true") !== -1) {
+                alert("Registration successful!");
+            }
+        </script>
+    </body>
+</html>

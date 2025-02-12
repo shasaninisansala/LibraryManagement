@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="add1.css">
+    <title>Add Book</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Add Book</h2>
+        <form id="addBookForm" enctype="multipart/form-data">
+            <label for="picture">Book Picture:</label>
+            <input type="file" id="picture" name="picture" accept="image/*" required>
+
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required>
+
+            <label for="isbn">ISBN:</label>
+            <input type="text" id="isbn" name="isbn" maxlength="13" required>
+
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="add_books.js"></script>
+</body>
+</html>
